@@ -6,4 +6,10 @@
         update tb_user set sex = 1 where customer_id <![CDATA[ <= ]]> 3
     </update>
 
+    <insert id="batchInsertUserData">
+        <foreach collection="userList" item="user" open="start transaction;" close=";commit;" separator=";">
+            insert tb_user (customer_id,customer_name,phone_num,sex,age) values (#{user.customerId},#{user.customerName},#{user.phoneNum},#{user.sex},#{user.age})
+        </foreach>
+    </insert>
+
 </mapper>
