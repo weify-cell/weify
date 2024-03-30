@@ -2,11 +2,11 @@ package com.demo.common;
 
 
 
-import cn.hutool.core.date.DateUtil;
+
 import io.netty.util.HashedWheelTimer;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 @SpringBootApplication

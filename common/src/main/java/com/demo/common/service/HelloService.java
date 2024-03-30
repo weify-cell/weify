@@ -1,9 +1,9 @@
 package com.demo.common.service;
 
-import com.demo.common.domain.dto.Order;
+import com.demo.common.domain.dto.User;
 
 public interface HelloService {
-    public Order getExample1();
-    public Order getExample2();
+    public User getExample1();
+    public User getExample2();
     public String getExample3();
 }

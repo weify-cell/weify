@@ -1,17 +1,16 @@
 package com.demo.common.service;
 
 
-import com.demo.common.domain.dto.Order;
-import com.demo.common.service.HelloService;
+import com.demo.common.domain.dto.User;
 import org.springframework.stereotype.Service;
 
 
 @Service
 public class HelloServiceImpl implements HelloService {
     @Override
-    public Order getExample1() {
+    public User getExample1() {
 
-        Order order = new Order();
+        User order = new User();
         order.setCustomerId(12456);
         order.setCustomerName("张三");
         order.setPhoneNum("12332455656");
@@ -21,8 +20,8 @@ public class HelloServiceImpl implements HelloService {
     }
 
     @Override
-    public Order getExample2() {
-        Order order = new Order();
+    public User getExample2() {
+        User order = new User();
         order.setCustomerId(124561221);
         order.setCustomerName("里斯");
         order.setPhoneNum("dsfgvdrfvbrt");

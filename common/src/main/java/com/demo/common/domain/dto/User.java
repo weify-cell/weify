@@ -2,7 +2,7 @@ package com.demo.common.domain.dto;
 
 import java.util.Optional;
 
-public class Order {
+public class User {
     private Integer customerId;
     private String customerName;
     private String phoneNum;
@@ -50,7 +50,4 @@ public class Order {
     }
 
 
-    public static void main(String[] args) {
-        Optional<Object> empty = Optional.empty();
-    }
-}
+ }
